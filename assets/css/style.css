@@ -51,6 +51,7 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     border: 1px solid #f5c6cb;
+    display: none;
 }
 
 .form form .name-details {
@@ -109,6 +110,11 @@ form .name-details .field:last-child {
     top: 70%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+
+.form form .field i.active::before {
+    color: #333;
+    content: "\f070";
 }
 
 .form .link {
@@ -177,7 +183,8 @@ form .name-details .field:last-child {
 }
 
 .users .search .text {
-    font-size: 18px;
+    font-size: 15px;
+    color: #333;
     width: calc(100% - 50px);
 }
 
@@ -190,6 +197,14 @@ form .name-details .field:last-child {
     padding: 0 13px;
     font-size: 16px;
     outline: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+.users .search input.active {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .users .search button {
@@ -197,11 +212,21 @@ form .name-details .field:last-child {
     height: 42px;
     border: none;
     outline: none;
-    color: #fff;
-    background: #333;
+    color: #333;
+    background: #fff;
     border-radius: 0 5px 5px 0;
     font-size: 17px;
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.users .search button.active {
+    color: #fff;
+    background: #333;
+}
+
+.users .search button.active i::before {
+    content: "\f00d";
 }
 
 .users-list {

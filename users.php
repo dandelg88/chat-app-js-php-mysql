@@ -101,6 +101,6 @@
             </div>
         </section>
     </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/users.js"></script>
 </body>
 </html>

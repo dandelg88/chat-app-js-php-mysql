@@ -31,7 +31,7 @@
                 </div>
                 <div class="field input">
                     <label>Contraseña</label>
-                    <input type="text" placeholder="Ingresa una contraseña">
+                    <input type="password" placeholder="Ingresa una contraseña">
                     <i class="fas fa-eye"></i>
                 </div>
                 <div class="field image">
@@ -45,6 +45,6 @@
             <div class="link">¿Ya tienes cuenta? <a href="#">Ingresa ahora</a></div>
         </section>
     </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/pass-show-hide.js"></script>
 </body>
 </html>
